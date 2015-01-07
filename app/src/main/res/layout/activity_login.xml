@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/Login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <EditText
+        android:id="@+id/textPwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textLogin"
+        android:layout_toRightOf="@+id/idPwd"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/textLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textPwd"
+        android:layout_alignEnd="@+id/textPwd"
+        android:layout_alignLeft="@+id/textPwd"
+        android:layout_alignStart="@+id/textPwd" />
+
+    <TextView
+        android:id="@+id/idPwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textPwd"
+        android:gravity="center"
+        android:text="Password"
+        android:layout_below="@+id/textLogin"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/idLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Login"
+        android:layout_above="@+id/textPwd"
+        android:layout_toLeftOf="@+id/textLogin"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textPwd"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="86dp"
+        android:gravity="center"
+        android:text="Valider" />
+</RelativeLayout>
